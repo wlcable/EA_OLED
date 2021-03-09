@@ -3,3 +3,4 @@
 .piolibdeps
 .vscode
 platformio.ini
+library.json
