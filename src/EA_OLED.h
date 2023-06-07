@@ -47,11 +47,11 @@ class EA_OLED {
         void clear(void);       //clears the whole display and sets the cursor to home position
         void str(const char *str);
         void DefineCharacter(uint8_t postion, uint8_t *data);
+        void cmd(uint8_t cmd);        
 
      private:
         uint8_t _ss_pin, _mosi_pin, _clk_pin, _lines, _width;
         void softSpiTransfer(uint16_t shOut);
-        void cmd(uint8_t cmd);
         void dat(uint8_t data);
 };
 #endif
